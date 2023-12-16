@@ -1,10 +1,10 @@
-ARG BASE="mcr.microsoft.com/oss/kubernetes/windows-host-process-containers-base-image:v0.1.0"
+ARG BASE="mcr.microsoft.com/oss/kubernetes/windows-host-process-containers-base-image:v1.0.0"
 
 FROM --platform=linux/amd64 curlimages/curl as bins
-ARG containernetworkingCniVersion="1.3.0"
+ARG containernetworkingCniVersion="1.5.1"
 ARG cniVersion="0.3.0"
-ARG flannelCniVersion="1.1.2"
-ARG flannelVersion="v0.21.5"
+ARG flannelCniVersion="1.5.1-flannel1"
+ARG flannelVersion="v0.25.5"
 
 # Todo simplify this
 # We need multiple sets of binaries 
