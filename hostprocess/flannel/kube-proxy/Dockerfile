@@ -1,4 +1,4 @@
-ARG BASE="mcr.microsoft.com/oss/kubernetes/windows-host-process-containers-base-image:v0.1.0"
+ARG BASE="mcr.microsoft.com/oss/kubernetes/windows-host-process-containers-base-image:v1.0.0"
 
 FROM --platform=linux/amd64 curlimages/curl as bins
 ARG k8sVersion="v1.22.0"
